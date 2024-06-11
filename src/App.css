@@ -107,7 +107,7 @@
 /* Home Page */
 .profile-container {
   display: flex;
-  background: url('./assets//img/dark-background-gif2.gif');
+  background: url('./assets//img/dark-background-gif3.gif');
   background-repeat:repeat;
   filter: blur(1px);
   justify-content: center;
