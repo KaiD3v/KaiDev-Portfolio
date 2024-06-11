@@ -1,11 +1,15 @@
 import './App.css'
 
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 
 // components
 import Navbar from './components/Navbar'
 import DropdownMenu from './components/DropdownMenu'
+
+// pages
+import Home from './pages/Home'
 
 function App() {
   const [isActive, setIsActive] = useState(false)
@@ -20,7 +24,11 @@ function App() {
         <Navbar isActive={isActive} handleDropDown={handleDropDown} />
       </div>
       <div className="container">
-        {/* Your content here */}
+        <Router>
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </Router>
       </div>
     </div>
   )

@@ -104,6 +104,19 @@
   background-color: #f9f9f9;
 }
 
+/* Home Page */
+.profile-container {
+  display: flex;
+  background: url('./assets//img/dark-background-gif2.gif');
+  background-repeat:repeat;
+  filter: blur(1px);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
 /* Animações */
 @keyframes toBottomDrop {
   0% {
