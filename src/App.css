@@ -1,3 +1,5 @@
+/* Estilos existentes */
+
 #root {
   margin: 0 auto;
 }
@@ -8,11 +10,19 @@
   height: 1000vh;
 }
 
+.nav-wrapper {
+  flex-direction: column;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 2rem;
   width: 100%;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  transition: top 0.3s;
+  z-index: 1000;
 }
 
 .nav-container .sm-screen-div {
@@ -31,6 +41,9 @@
 
 .scrolled {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #eee;
   animation: toBottomDrop 0.5s ease forwards;
 }
@@ -38,6 +51,57 @@
 .scrolled a,
 .scrolled p {
   color: #0e0e0e;
+}
+
+/* Dropdown Styles */
+.dropdown,
+.dropdown-on-scroll {
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.dropdown-on-scroll {
+  position: fixed;
+  margin-top: 78px;
+  top: 0;
+}
+
+.dropdown-on-scroll ul,
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-on-scroll li,
+.dropdown li {
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-on-scroll li:last-child,
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-on-scroll a,
+.dropdown a {
+  display: block;
+  padding: 1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropdown-on-scroll a:hover,
+.dropdown a:hover {
+  background-color: #f9f9f9;
 }
 
 /* Animações */
