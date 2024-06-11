@@ -1,5 +1,3 @@
-/* Estilos existentes */
-
 #root {
   margin: 0 auto;
 }
@@ -15,6 +13,10 @@
   justify-content: space-between;
   padding: 1.5rem 2rem;
   width: 100%;
+}
+
+.nav-container .sm-screen-div {
+  display: none;
 }
 
 .nav-container div p {
@@ -33,16 +35,27 @@
   animation: toBottomDrop 0.5s ease forwards;
 }
 
-.scrolled a, .scrolled p {
+.scrolled a,
+.scrolled p {
   color: #0e0e0e;
 }
 
-/* Animação de drop */
+/* Animações */
 @keyframes toBottomDrop {
   0% {
     transform: translateY(-100%);
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 450px) {
+  .nav-container .lg-screen-div {
+    display: none;
+  }
+  .nav-container .sm-screen-div {
+    display: block;
   }
 }

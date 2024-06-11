@@ -1,3 +1,5 @@
+import { CiMenuBurger } from "react-icons/ci";
+
 import { useEffect, useState } from "react"
 
 const Navbar = () => {
@@ -24,12 +26,15 @@ const Navbar = () => {
                     <a href="#profile">Kai<b>D3v</b></a>
                 </p>
             </div>
-            <div>
+            <div className="lg-screen-div">
                 <ul>
                     <li><a href="#works">Trabalhos</a></li>
                     <li><a href="#projects">Projetos</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
+            </div>
+            <div className="sm-screen-div">
+                <CiMenuBurger size={25} color={scrolled ? "black" : "white"}/>
             </div>
         </nav>
     )
