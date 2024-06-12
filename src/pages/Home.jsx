@@ -1,8 +1,20 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import CardProject from "../components/CardProject";
+import { useState } from "react";
 
 const Home = () => {
+    const [projectContainer, setProjectContainer] = useState("projects")
+
+    const toggleProjectContainer = () => {
+        setProjectContainer("projects")
+    }
+
+    const toggleWorkContainer = () => {
+        setProjectContainer("works")
+    }
+
     return (
         <div className='home-container'>
             <section id='profile' className='profile-container'>
@@ -32,11 +44,33 @@ const Home = () => {
             <section id='projects' className="projects-principal-container">
                 <section className='projects-container'>
                     <header>
-                        <button>Projetos</button>
-                        <button>Trabalhos</button>
+                        <button onClick={toggleProjectContainer} className={projectContainer === "projects" ? "active" : ""}>Projetos</button>
+                        <button onClick={toggleWorkContainer} className={projectContainer === "works" ? "active" : ""}>Trabalhos</button>
                     </header>
-                    <section>
-                        <div><h2>Projetos</h2></div>
+                    <div><h2>Projetos</h2></div>
+                    <section className='projects-list'>
+                        {
+                            projectContainer === "works" && (
+                                <main>
+                                    <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaGithub />} />
+                                    <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaLinkedin />} />
+                                    <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaLinkedin />} />
+                                    <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaLinkedin />} />
+                                    <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaLinkedin />} />
+                                </main>
+                            )
+                        }
+                        {
+                            projectContainer === "projects" && (
+                                <main>
+                                    <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaGithub />} />
+                                    <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaLinkedin />} />
+                                    <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaLinkedin />} />
+                                    <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaLinkedin />} />
+                                    <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaLinkedin />} />
+                                </main>
+                            )
+                        }
                     </section>
                 </section>
             </section>

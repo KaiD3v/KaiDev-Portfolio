@@ -1,5 +1,3 @@
-/* Styles */
-
 #root {
   margin: 0 auto;
 }
@@ -206,12 +204,21 @@
   height: 100vh;
 }
 
+.projects-principal-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  background-color: #ffff;
+  height: 100vh;
+}
+
 .projects-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 800px;
+  max-width: 950px;
   width: 100%;
   margin: 3rem auto;
   background-color: #1a1a1a;
@@ -234,7 +241,6 @@
 }
 
 .projects-container header button {
-  background-color: #333;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -245,6 +251,83 @@
 
 .projects-container header button:hover {
   background-color: #555;
+}
+
+.projects-list {
+  overflow-x: auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+.projects-list main {
+  display: flex;
+  gap: 2rem;
+}
+
+.projects-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #2a2a2a;
+  color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  min-width: 300px;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projects-card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.projects-card-container header {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.projects-container header button {
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.projects-container header button:hover {
+  background-color: #555;
+}
+
+.projects-container header button.active {
+  background-color: #007bff;
+}
+
+.projects-card-container main img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.projects-card-container footer {
+  padding: 1rem;
+}
+
+.tech-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tech-icons p {
+  font-weight: bold;
 }
 
 /* Animações */
@@ -280,5 +363,10 @@
     text-align: center;
     border-radius: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .projects-card-container {
+    min-width: 100%;
+    max-width: 100%;
   }
 }
