@@ -4,8 +4,15 @@ import { MdEmail } from "react-icons/md";
 import CardProject from "../components/CardProject";
 import { useState } from "react";
 
+import emailjs from "@emailjs/browser"
+
 const Home = () => {
     const [projectContainer, setProjectContainer] = useState("projects")
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [emailSend, setEmailSend] = useState("")
+    const [message, setMessage] = useState("")
+    const [monitorEmailShipment, setMonitorEmailShipment] = useState("")
 
     const toggleProjectContainer = () => {
         setProjectContainer("projects")
@@ -13,6 +20,32 @@ const Home = () => {
 
     const toggleWorkContainer = () => {
         setProjectContainer("works")
+    }
+
+    const handelSendEmail = async (e) => {
+        e.preventDefault()
+
+        if (name === '' || email === '' || message === '') {
+            setEmailSend("Preencha todos os campos!")
+            setMonitorEmailShipment("error")
+            return
+        }
+
+        const templateParams = {
+            from_name: name,
+            email: email,
+            message: message
+        }
+
+        emailjs.send('service_6kla6y4', 'template_h2y1rq4', templateParams, '7KcDDP-U9UAQk-iD9')
+            .then((res) => {
+                setEmailSend('E-Mail enviado com sucesso!')
+                setMonitorEmailShipment("success")
+                setName("")
+                setEmail("")
+                setMessage("")
+            })
+            .catch(err => setEmailSend('Ocorreu um erro, tente novamente mais tarde.'))
     }
 
     return (
@@ -75,6 +108,31 @@ const Home = () => {
                         }
                     </section>
                 </section>
+            </section>
+            <section id="contact" className="contact-container">
+                <header>
+                    <h2>Contato</h2>
+                </header>
+                <main>
+                    <form onSubmit={handelSendEmail}>
+                        <label>
+                            <span>Nome</span>
+                            <input required type="text" placeholder="Seu nome" onChange={e => setName(e.target.value)} value={name || ""} />
+                        </label>
+                        <label>
+                            <span>E-Mail</span>
+                            <input required type="email" placeholder="Seu E-Mail" onChange={e => setEmail(e.target.value)} value={email || ""} />
+                        </label>
+                        <label>
+                            <span>Mensagem</span>
+                            <textarea required placeholder="Sua Mensagem" onChange={e => setMessage(e.target.value)} value={message || ""}></textarea>
+                        </label>
+                        <div className={`email-send ${monitorEmailShipment === "success" ? "success" : monitorEmailShipment === "error" ? "error" : ""}`}>
+                            {emailSend}
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </main>
             </section>
         </div>
     )

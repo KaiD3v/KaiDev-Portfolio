@@ -337,6 +337,106 @@
   font-weight: bold;
 }
 
+.contact-container header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #242424;
+  color: #fff;
+}
+
+.contact-container main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: #0f182f;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container main form label {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.contact-container main form label span {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact-container main form input,
+.contact-container main form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #eee;
+}
+
+.contact-container main form input::placeholder,
+.contact-container main form textarea::placeholder {
+  color: #999;
+}
+
+.contact-container main form input:focus,
+.contact-container main form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-container main form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-container main form button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-container main form button:hover {
+  background-color: #0056b3;
+}
+
+.email-send {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 18px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
 /* Animações */
 @keyframes toBottomDrop {
   0% {
