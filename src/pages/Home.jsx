@@ -50,9 +50,10 @@ const Home = () => {
     }
 
     return (
-        <m.div 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }} className='home-container'>
+        <m.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className='home-container'>
             <section id='profile' className='profile-container'>
                 <div>
                     <section className="profile-picture">
@@ -89,24 +90,28 @@ const Home = () => {
                     <section className='projects-list'>
                         {
                             projectContainer === "works" && (
-                                <main>
+                                <m.main initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }} className='home-container'>
                                     <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaGithub />} />
                                     <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaLinkedin />} />
                                     <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaLinkedin />} />
                                     <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaLinkedin />} />
                                     <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaLinkedin />} />
-                                </main>
+                                </m.main>
                             )
                         }
                         {
                             projectContainer === "projects" && (
-                                <main>
+                                <m.main
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    className='home-container'>
                                     <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaGithub />} />
                                     <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaLinkedin />} />
                                     <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaLinkedin />} />
                                     <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaLinkedin />} />
                                     <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaLinkedin />} />
-                                </main>
+                                </m.main>
                             )
                         }
                     </section>
