@@ -159,7 +159,7 @@
 
 .about-container {
   text-align: left;
-  padding: 2rem;
+  padding: 3rem;
   color: #0e0e0e;
   background-color: #f9f9f9;
 }
@@ -189,11 +189,20 @@
   margin-bottom: 1.5rem;
 }
 
+.portfolio-container {
+  background: url('./assets//img/dark-background-gif3.gif');
+  font-weight: lighter;
+  text-align: center;
+  font-size: large;
+  padding: 3rem;
+}
+
 .projects-principal-container {
   display: flex;
   flex-direction: column;
+  margin: 0;
   width: 100%;
-  background: url('./assets//img/dark-background-gif3.gif');
+  background-color: #ffff;
   height: 100vh;
 }
 
@@ -207,20 +216,21 @@
   margin: 3rem auto;
   background-color: #1a1a1a;
   color: #fff;
-  padding: 2rem;
   text-align: center;
-  border-radius: 10px;
+  border-radius: .2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .projects-container header {
   display: flex;
-  gap: 2rem;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  top: 0;
+  padding: 1rem;
+  gap: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #eee;
-  padding: 1.2rem 3rem;
-  border-radius: 1rem;
+  width: 100%;
 }
 
 .projects-container header button {
