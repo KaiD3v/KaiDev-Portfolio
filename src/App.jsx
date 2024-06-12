@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // components
 import Navbar from './components/Navbar'
-import DropdownMenu from './components/DropdownMenu'
+import Footer from './components/Footer'
 
 // pages
 import Home from './pages/Home'
@@ -30,6 +30,7 @@ function App() {
           </Routes>
         </Router>
       </div>
+      <Footer />
     </div>
   )
 }
