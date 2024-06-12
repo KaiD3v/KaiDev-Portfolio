@@ -1,4 +1,4 @@
-/* Estilos existentes */
+/* Styles */
 
 #root {
   margin: 0 auto;
@@ -70,6 +70,7 @@
 .dropdown-on-scroll {
   position: fixed;
   margin-top: 78px;
+  animation: toBottomDrop 0.5s ease forwards;
   top: 0;
 }
 
@@ -154,6 +155,38 @@
 
 .profile-description ul li a:hover {
   color: #ccc;
+}
+
+.about-container {
+  text-align: left;
+  padding: 2rem;
+  color: #0e0e0e;
+  background-color: #f9f9f9;
+}
+
+.about-container a {
+  color: #333;
+}
+
+.about-container a:hover {
+  text-decoration: underline; 
+  color: #0e0e0e;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 /* Animações */
