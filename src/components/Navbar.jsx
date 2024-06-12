@@ -33,7 +33,7 @@ const Navbar = ({ isActive, handleDropDown }) => {
                 </div>
                 <div className="lg-screen-div">
                     <ul>
-                        <li><a href="#works">Trabalhos</a></li>
+                        <li><a href="#projects">Trabalhos</a></li>
                         <li><a href="#projects">Projetos</a></li>
                         <li><a href="#contact">Contato</a></li>
                     </ul>

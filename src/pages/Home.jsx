@@ -41,13 +41,15 @@ const Home = () => {
             <section className="portfolio-container">
                 <h2>Portfólio</h2>
             </section>
-            <section id='projects' className="projects-principal-container">
+            <section id={projectContainer === 'projects' ? 'projects' : 'works'} className="projects-principal-container">
                 <section className='projects-container'>
                     <header>
                         <button onClick={toggleProjectContainer} className={projectContainer === "projects" ? "active" : ""}>Projetos</button>
                         <button onClick={toggleWorkContainer} className={projectContainer === "works" ? "active" : ""}>Trabalhos</button>
                     </header>
-                    <div><h2>Projetos</h2></div>
+                    <div className="projects-container-title">
+                        <h2>Projetos</h2>
+                    </div>
                     <section className='projects-list'>
                         {
                             projectContainer === "works" && (
