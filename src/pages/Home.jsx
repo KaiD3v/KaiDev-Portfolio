@@ -3,6 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import CardProject from "../components/CardProject";
 import { useState } from "react";
+import { motion as m } from "framer-motion";
 
 import emailjs from "@emailjs/browser"
 
@@ -49,7 +50,9 @@ const Home = () => {
     }
 
     return (
-        <div className='home-container'>
+        <m.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }} className='home-container'>
             <section id='profile' className='profile-container'>
                 <div>
                     <section className="profile-picture">
@@ -134,7 +137,7 @@ const Home = () => {
                     </form>
                 </main>
             </section>
-        </div>
+        </m.div>
     )
 }
 
