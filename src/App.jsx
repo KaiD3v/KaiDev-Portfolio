@@ -10,6 +10,10 @@ import Footer from './components/Footer'
 
 // pages
 import Home from './pages/Home'
+import MiniBlog from './pages/projects/MiniBlog/MiniBlog'
+import IjatuMystery from './pages/works/IjatuMystery/IjatuMystery'
+import ThriftStoreManager from './pages/works/ThriftStoreManager/ThriftStoreManager'
+import ReactGram from './pages/projects/ReactGram/ReactGram'
 
 function App() {
   const [isActive, setIsActive] = useState(false)
@@ -26,7 +30,16 @@ function App() {
       <div className="container">
         <Router>
           <Routes>
+            {/* Home Page */}
             <Route path='/' element={<Home />} />
+
+            {/* Projects Routes */}
+            <Route path='/projects/mini-blog' element={<MiniBlog />} />
+            <Route path='/projects/reactgram' element={<ReactGram />} />
+            
+            {/* Works Routes */}
+            <Route path='/works/ijatu-mystery-rpg' element={<IjatuMystery />} />
+            <Route path='/works/thrift-store-manager' element={<ThriftStoreManager />} />
           </Routes>
         </Router>
       </div>

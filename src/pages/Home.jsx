@@ -106,8 +106,8 @@ const Home = () => {
                             projectContainer === "works" && (
                                 <m.main initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1 }} className='home-container'>
-                                    <CardProject projectLink={'/projects/thrift-store-manager'} projectName="Gerenciador de Brechó" projectImg={thriftStoreImg} projectDesc="Uma aplicação de gerenciamento para lojas e brechós." projectTechIcons={[<FaReact />, <SiExpress />, <RiTailwindCssFill />]} />
-                                    <CardProject projectLink={'/projects/ijatu-mystery-rpg'} projectName="Site de Documentação - O Mistério de IJatu" projectImg={ijatuMysteryImg} projectDesc="Um site de documentação para um RPG de mesa." projectTechIcons={[<FaReact />, <SiTypescript />, <RiTailwindCssFill />]} />
+                                    <CardProject projectLink={'/works/thrift-store-manager'} projectName="Gerenciador de Brechó" projectImg={thriftStoreImg} projectDesc="Uma aplicação de gerenciamento para lojas e brechós." projectTechIcons={[<FaReact />, <SiExpress />, <RiTailwindCssFill />]} />
+                                    <CardProject projectLink={'/works/ijatu-mystery-rpg'} projectName="Site de Documentação - O Mistério de IJatu" projectImg={ijatuMysteryImg} projectDesc="Um site de documentação para um RPG de mesa." projectTechIcons={[<FaReact />, <SiTypescript />, <RiTailwindCssFill />]} />
                                 </m.main>
                             )
                         }
@@ -117,8 +117,8 @@ const Home = () => {
                                     initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1 }}
                                     className='home-container'>
-                                    <CardProject projectName="MiniBlog" projectImg={miniblogImg} projectDesc="Um pequeno blog que permite realizar postagens" projectTechIcons={<FaReact />} />
-                                    <CardProject projectName="ReactGram" projectImg={reactgramImg} projectDesc="Um clone do instagram feito com ReactJs" projectTechIcons={<FaReact />} />
+                                    <CardProject projectLink={'/projects/mini-blog'} projectName="MiniBlog" projectImg={miniblogImg} projectDesc="Um pequeno blog que permite realizar postagens" projectTechIcons={<FaReact />} />
+                                    <CardProject projectLink={'/projects/reactgram'} projectName="ReactGram" projectImg={reactgramImg} projectDesc="Um clone do instagram feito com ReactJs" projectTechIcons={<FaReact />} />
                                 </m.main>
                             )
                         }
