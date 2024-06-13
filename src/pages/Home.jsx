@@ -13,6 +13,8 @@ import { MdEmail } from "react-icons/md";
 // Images
 import thriftStoreImg from "../assets/img/thrif-store-img.png"
 import ijatuMysteryImg from "../assets/img/ijatu-mystery-img.png"
+import miniblogImg from '../assets/img/miniblog-img.png'
+import reactgramImg from '../assets/img/reactgram-img.png'
 
 // components
 import CardProject from "../components/CardProject";
@@ -115,11 +117,8 @@ const Home = () => {
                                     initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1 }}
                                     className='home-container'>
-                                    <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaGithub />} />
-                                    <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaLinkedin />} />
-                                    <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaLinkedin />} />
-                                    <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaLinkedin />} />
-                                    <CardProject projectName="Projeto" projectImg="https://wallpaperaccess.com/full/829012.jpg" projectDesc="Descrição do Projeto" projectTechIcons={<FaLinkedin />} />
+                                    <CardProject projectName="MiniBlog" projectImg={miniblogImg} projectDesc="Um pequeno blog que permite realizar postagens" projectTechIcons={<FaReact />} />
+                                    <CardProject projectName="ReactGram" projectImg={reactgramImg} projectDesc="Um clone do instagram feito com ReactJs" projectTechIcons={<FaReact />} />
                                 </m.main>
                             )
                         }
