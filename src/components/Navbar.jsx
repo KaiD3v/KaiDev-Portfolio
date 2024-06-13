@@ -28,14 +28,14 @@ const Navbar = ({ isActive, handleDropDown }) => {
             <nav className={scrolled ? "scrolled nav-container" : 'nav-container'}>
                 <div>
                     <p>
-                        <a href="#profile">Kai<b>D3v</b></a>
+                        <a href="/">Kai<b>D3v</b></a>
                     </p>
                 </div>
                 <div className="lg-screen-div">
                     <ul>
-                        <li><a href="#projects">Trabalhos</a></li>
-                        <li><a href="#projects">Projetos</a></li>
-                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="/#projects">Trabalhos</a></li>
+                        <li><a href="/#projects">Projetos</a></li>
+                        <li><a href="/#contact">Contato</a></li>
                     </ul>
                 </div>
                 <div className="sm-screen-div">

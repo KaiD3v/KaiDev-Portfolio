@@ -1,9 +1,21 @@
+// hooks & libs
+import { useState } from "react";
+import { motion as m } from "framer-motion";
+
+// icons
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiExpress, SiTypescript } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+
+// Images
+import thriftStoreImg from "../assets/img/thrif-store-img.png"
+import ijatuMysteryImg from "../assets/img/ijatu-mystery-img.png"
+
+// components
 import CardProject from "../components/CardProject";
-import { useState } from "react";
-import { motion as m } from "framer-motion";
 
 import emailjs from "@emailjs/browser"
 
@@ -92,11 +104,8 @@ const Home = () => {
                             projectContainer === "works" && (
                                 <m.main initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1 }} className='home-container'>
-                                    <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaGithub />} />
-                                    <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaLinkedin />} />
-                                    <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaLinkedin />} />
-                                    <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaLinkedin />} />
-                                    <CardProject projectName="Trabalho" projectImg="https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg" projectDesc="Descrição do trabalho" projectTechIcons={<FaLinkedin />} />
+                                    <CardProject projectLink={'/projects/thrift-store-manager'} projectName="Gerenciador de Brechó" projectImg={thriftStoreImg} projectDesc="Uma aplicação de gerenciamento para lojas e brechós." projectTechIcons={[<FaReact />, <SiExpress />, <RiTailwindCssFill />]} />
+                                    <CardProject projectLink={'/projects/ijatu-mystery-rpg'} projectName="Site de Documentação - O Mistério de IJatu" projectImg={ijatuMysteryImg} projectDesc="Um site de documentação para um RPG de mesa." projectTechIcons={[<FaReact />, <SiTypescript />, <RiTailwindCssFill />]} />
                                 </m.main>
                             )
                         }

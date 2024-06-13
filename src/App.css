@@ -332,8 +332,15 @@
   margin-top: 0.5rem;
 }
 
+.tech-icons div {
+  display: flex;
+  gap: 1rem;
+}
+
 .tech-icons p {
+  
   font-weight: bold;
+
 }
 
 .contact-container header {
