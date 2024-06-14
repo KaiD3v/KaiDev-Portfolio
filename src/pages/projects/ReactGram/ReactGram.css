@@ -1,0 +1,148 @@
+.reactgram-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.reactgram-container header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reactgram-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.reactgram-container ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.reactgram-container li {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.reactgram-description {
+  margin-bottom: 30px;
+}
+
+.reactgram-description h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.reactgram-description p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.reactgram-images {
+  margin-top: 30px;
+}
+
+.reactgram-images h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-item {
+  flex: 1 1 30%;
+  max-width: 30%;
+  text-align: center;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.reactgram-container footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.reactgram-container footer a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.reactgram-container footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for screens with max-width of 431px */
+@media screen and (max-width: 431px) {
+  .reactgram-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .reactgram-container h1 {
+    font-size: 2rem;
+  }
+
+  .reactgram-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .reactgram-container ul {
+    padding: 0;
+  }
+
+  .reactgram-container li {
+    font-size: 1rem;
+  }
+
+  .reactgram-description h3 {
+    font-size: 1.5rem;
+  }
+
+  .reactgram-description p {
+    font-size: 1rem;
+  }
+
+  .reactgram-images h3 {
+    font-size: 1.5rem;
+  }
+
+  .images-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .image-item {
+    max-width: 100%;
+  }
+
+  .reactgram-container footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reactgram-container footer a {
+    font-size: 1rem;
+    margin: 5px;
+  }
+}
