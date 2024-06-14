@@ -14,7 +14,7 @@ const IjatuMystery = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="reactgram-container"
+      className="ijatumystery-container"
     >
       <header>
         <h1>Site - O Mistério de Ijatu</h1>
@@ -31,7 +31,7 @@ const IjatuMystery = () => {
           </li>
         </ul>
       </header>
-      <section className="reactgram-description">
+      <section className="ijatumystery-description">
         <h3>Sobre o Projeto</h3>
         <p>
           Este site é uma documentação para um RPG de mesa de mistério chamado
@@ -53,7 +53,7 @@ const IjatuMystery = () => {
           uma experiência imersiva para todos os jogadores.
         </p>
       </section>
-      <section className="reactgram-images">
+      <section className="ijatumystery-images">
         <h3>Imagens da Aplicação</h3>
         <div className="images-container">
           <m.div whileHover={{ scale: 1.05 }} className="image-item">
@@ -83,7 +83,7 @@ const IjatuMystery = () => {
         </div>
         <footer>
           <a href="https://the-ijatu-mystery-rpg.vercel.app/">Acessar Site</a>
-          <a href="https://github.com/KaiD3v/ReactGram">
+          <a href="https://github.com/KaiD3v/The-Ijatu-Mystery-Rpg">
             Acessar Repositório Open Source
           </a>
         </footer>
