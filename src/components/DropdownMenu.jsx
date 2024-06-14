@@ -5,9 +5,9 @@ const DropdownMenu = ({ isActive, scrolled }) => {
         isActive ? (
             <div className={scrolled ? 'dropdown dropdown-on-scroll' : 'dropdown'}>
                 <ul>
-                    <li><a href="#works">Trabalhos</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="/#projects">Trabalhos</a></li>
+                    <li><a href="/#projects">Projetos</a></li>
+                    <li><a href="/#contact">Contato</a></li>
                 </ul>
             </div>
         ) : null
