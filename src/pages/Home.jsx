@@ -54,10 +54,10 @@ const Home = () => {
 
     emailjs
       .send(
-        "service_6kla6y4",
-        "template_h2y1rq4",
+        "service_n4tz3te",
+        "template_vcv1hpm",
         templateParams,
-        "7KcDDP-U9UAQk-iD9"
+        "EnhX-oOCHeYE88ttm"
       )
       .then(res => {
         setEmailSend("E-Mail enviado com sucesso!");
