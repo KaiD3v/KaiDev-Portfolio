@@ -14,6 +14,7 @@ import MiniBlog from './pages/projects/MiniBlog/MiniBlog'
 import IjatuMystery from './pages/works/IjatuMystery/IjatuMystery'
 import ThriftStoreManager from './pages/works/ThriftStoreManager/ThriftStoreManager'
 import ReactGram from './pages/projects/ReactGram/ReactGram'
+import MyRepos from './pages/projects/MyRepos/MyRepos'
 
 function App() {
   const [isActive, setIsActive] = useState(false)
@@ -36,6 +37,7 @@ function App() {
             {/* Projects Routes */}
             <Route path='/projects/mini-blog' element={<MiniBlog />} />
             <Route path='/projects/reactgram' element={<ReactGram />} />
+            <Route path='/projects/my-repos' element={<MyRepos />} />
             
             {/* Works Routes */}
             <Route path='/works/ijatu-mystery-rpg' element={<IjatuMystery />} />

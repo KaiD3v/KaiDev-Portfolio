@@ -15,6 +15,7 @@ import thriftStoreImg from "../assets/img/thrif-store-img.png";
 import ijatuMysteryImg from "../assets/img/ijatu-mystery-img.png";
 import miniblogImg from "../assets/img/miniblog-img.png";
 import reactgramImg from "../assets/img/reactgram-img.png";
+import myRepos from "../assets/img/MyRepos.png";
 
 // components
 import CardProject from "../components/CardProject";
@@ -194,6 +195,13 @@ const Home = () => {
                   projectName="ReactGram"
                   projectImg={reactgramImg}
                   projectDesc="Um clone do instagram feito com ReactJs"
+                  projectTechIcons={<FaReact />}
+                />
+                <CardProject
+                  projectLink={"/projects/my-repos"}
+                  projectName="My Repos"
+                  projectImg={myRepos}
+                  projectDesc="Um site para armazenar repositórios do Github"
                   projectTechIcons={<FaReact />}
                 />
               </m.main>}
