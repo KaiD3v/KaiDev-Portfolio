@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion as m } from "framer-motion";
 
 // icons
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -16,6 +16,7 @@ import ijatuMysteryImg from "../assets/img/ijatu-mystery-img.png";
 import miniblogImg from "../assets/img/miniblog-img.png";
 import reactgramImg from "../assets/img/reactgram-img.png";
 import myRepos from "../assets/img/MyRepos.png";
+import tasksPlus from "../assets/img/TasksPlus.png"
 
 // components
 import CardProject from "../components/CardProject";
@@ -203,6 +204,13 @@ const Home = () => {
                   projectImg={myRepos}
                   projectDesc="Um site para armazenar repositórios do Github"
                   projectTechIcons={<FaReact />}
+                />
+                <CardProject
+                  projectLink={"/projects/tasks-plus"}
+                  projectName="Tasks+"
+                  projectImg={tasksPlus}
+                  projectDesc="Um site para armazenar repositórios do Github"
+                  projectTechIcons={<RiNextjsFill />}
                 />
               </m.main>}
           </section>

@@ -46,15 +46,11 @@ const MyRepos = () => {
         <div className="images-container">
           <m.div whileHover={{ scale: 1.05 }} className="image-item">
             <img src={myRepos} alt="Busca de Repositórios" />
-            <p>
-              Página inicial da aplicação web.
-            </p>
+            <p>Página inicial da aplicação web.</p>
           </m.div>
           <m.div whileHover={{ scale: 1.05 }} className="image-item">
             <img src={myReposTwo} alt="Lista de Repositórios Salvos" />
-            <p>
-              Página de detalhes do repositório.
-            </p>
+            <p>Página de detalhes do repositório.</p>
           </m.div>
         </div>
         <footer>
