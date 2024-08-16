@@ -16,7 +16,7 @@ import ijatuMysteryImg from "../assets/img/ijatu-mystery-img.png";
 import miniblogImg from "../assets/img/miniblog-img.png";
 import reactgramImg from "../assets/img/reactgram-img.png";
 import myRepos from "../assets/img/MyRepos.png";
-import tasksPlus from "../assets/img/TasksPlus.png"
+import tasksPlus from "../assets/img/TasksPlus.png";
 
 // components
 import CardProject from "../components/CardProject";
@@ -153,6 +153,7 @@ const Home = () => {
               <m.main
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
                 className="home-container"
               >
                 <CardProject
@@ -182,6 +183,7 @@ const Home = () => {
               <m.main
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
                 className="home-container"
               >
                 <CardProject
