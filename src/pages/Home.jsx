@@ -11,12 +11,12 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 // Images
-import thriftStoreImg from "../assets/img/thrif-store-img.png";
-import ijatuMysteryImg from "../assets/img/ijatu-mystery-img.png";
-import miniblogImg from "../assets/img/miniblog-img.png";
-import reactgramImg from "../assets/img/reactgram-img.png";
-import myRepos from "../assets/img/MyRepos.png";
-import tasksPlus from "../assets/img/TasksPlus.png";
+import thriftStoreImg from "/assets/thrif-store-img.png";
+import ijatuMysteryImg from "/assets/ijatu-mystery-img.png";
+import miniblogImg from "/assets/miniblog-img.png";
+import reactgramImg from "/assets/reactgram-img.png";
+import myRepos from "/assets/MyRepos.png";
+import tasksPlus from "/assets/TasksPlus.png";
 
 // components
 import CardProject from "../components/CardProject";
@@ -39,7 +39,7 @@ const Home = () => {
     setProjectContainer("works");
   };
 
-  const handelSendEmail = async e => {
+  const handelSendEmail = async (e) => {
     e.preventDefault();
 
     if (name === "" || email === "" || message === "") {
@@ -51,7 +51,7 @@ const Home = () => {
     const templateParams = {
       from_name: name,
       email: email,
-      message: message
+      message: message,
     };
 
     emailjs
@@ -61,14 +61,14 @@ const Home = () => {
         templateParams,
         "EnhX-oOCHeYE88ttm"
       )
-      .then(res => {
+      .then((res) => {
         setEmailSend("E-Mail enviado com sucesso!");
         setMonitorEmailShipment("success");
         setName("");
         setEmail("");
         setMessage("");
       })
-      .catch(err =>
+      .catch((err) =>
         setEmailSend("Ocorreu um erro, tente novamente mais tarde.")
       );
   };
@@ -149,7 +149,7 @@ const Home = () => {
             <h2>Projetos</h2>
           </div>
           <section className="projects-list">
-            {projectContainer === "works" &&
+            {projectContainer === "works" && (
               <m.main
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -157,29 +157,30 @@ const Home = () => {
                 className="home-container"
               >
                 <CardProject
-                  projectLink={"/works/thrift-store-manager"}
+                  projectLink={"/works/1"}
                   projectName="Gerenciador de Brechó"
                   projectImg={thriftStoreImg}
                   projectDesc="Uma aplicação de gerenciamento para lojas e brechós."
                   projectTechIcons={[
                     <FaReact />,
                     <SiExpress />,
-                    <RiTailwindCssFill />
+                    <RiTailwindCssFill />,
                   ]}
                 />
                 <CardProject
-                  projectLink={"/works/ijatu-mystery-rpg"}
+                  projectLink={"/works/2"}
                   projectName="Site de Documentação - O Mistério de IJatu"
                   projectImg={ijatuMysteryImg}
                   projectDesc="Um site de documentação para um RPG de mesa."
                   projectTechIcons={[
                     <FaReact />,
                     <SiTypescript />,
-                    <RiTailwindCssFill />
+                    <RiTailwindCssFill />,
                   ]}
                 />
-              </m.main>}
-            {projectContainer === "projects" &&
+              </m.main>
+            )}
+            {projectContainer === "projects" && (
               <m.main
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -187,34 +188,35 @@ const Home = () => {
                 className="home-container"
               >
                 <CardProject
-                  projectLink={"/projects/mini-blog"}
-                  projectName="MiniBlog"
-                  projectImg={miniblogImg}
-                  projectDesc="Um pequeno blog que permite realizar postagens"
-                  projectTechIcons={<FaReact />}
+                  projectLink={"/projects/4"}
+                  projectName="Tasks+"
+                  projectImg={tasksPlus}
+                  projectDesc="Um site para armazenar repositórios do Github"
+                  projectTechIcons={<RiNextjsFill />}
                 />
                 <CardProject
-                  projectLink={"/projects/reactgram"}
-                  projectName="ReactGram"
-                  projectImg={reactgramImg}
-                  projectDesc="Um clone do instagram feito com ReactJs"
-                  projectTechIcons={<FaReact />}
-                />
-                <CardProject
-                  projectLink={"/projects/my-repos"}
+                  projectLink={"/projects/2"}
                   projectName="My Repos"
                   projectImg={myRepos}
                   projectDesc="Um site para armazenar repositórios do Github"
                   projectTechIcons={<FaReact />}
                 />
                 <CardProject
-                  projectLink={"/projects/tasks-plus"}
-                  projectName="Tasks+"
-                  projectImg={tasksPlus}
-                  projectDesc="Um site para armazenar repositórios do Github"
-                  projectTechIcons={<RiNextjsFill />}
+                  projectLink={"/projects/1"}
+                  projectName="MiniBlog"
+                  projectImg={miniblogImg}
+                  projectDesc="Um pequeno blog que permite realizar postagens"
+                  projectTechIcons={<FaReact />}
                 />
-              </m.main>}
+                <CardProject
+                  projectLink={"/projects/3"}
+                  projectName="ReactGram"
+                  projectImg={reactgramImg}
+                  projectDesc="Um clone do instagram feito com ReactJs"
+                  projectTechIcons={<FaReact />}
+                />
+              </m.main>
+            )}
           </section>
         </section>
       </section>
@@ -230,7 +232,7 @@ const Home = () => {
                 required
                 type="text"
                 placeholder="Seu nome"
-                onChange={e => setName(e.target.value)}
+                onChange={(e) => setName(e.target.value)}
                 value={name || ""}
               />
             </label>
@@ -240,7 +242,7 @@ const Home = () => {
                 required
                 type="email"
                 placeholder="Seu E-Mail"
-                onChange={e => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 value={email || ""}
               />
             </label>
@@ -249,14 +251,18 @@ const Home = () => {
               <textarea
                 required
                 placeholder="Sua Mensagem"
-                onChange={e => setMessage(e.target.value)}
+                onChange={(e) => setMessage(e.target.value)}
                 value={message || ""}
               />
             </label>
             <div
-              className={`email-send ${monitorEmailShipment === "success"
-                ? "success"
-                : monitorEmailShipment === "error" ? "error" : ""}`}
+              className={`email-send ${
+                monitorEmailShipment === "success"
+                  ? "success"
+                  : monitorEmailShipment === "error"
+                  ? "error"
+                  : ""
+              }`}
             >
               {emailSend}
             </div>
