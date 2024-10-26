@@ -14,6 +14,7 @@ import ReactGram from "./pages/projects/ReactGram/ReactGram";
 import MyRepos from "./pages/projects/MyRepos/MyRepos";
 import TasksPlus from "./pages/projects/TasksPlus/TasksPlus";
 import WorksPageLayout from "./pages/WorksPageLayout";
+import ProjectsPageLayout from "./pages/ProjectsPageLayout";
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -34,7 +35,8 @@ function App() {
             <Route path="/" element={<Home />} />
 
             {/* Projects Routes */}
-            
+            <Route path="/projects/:id" element={<ProjectsPageLayout />} />
+
             {/* Works Routes */}
             <Route path="/works/:id" element={<WorksPageLayout />} />
           </Routes>

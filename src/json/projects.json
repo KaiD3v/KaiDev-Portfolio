@@ -1,0 +1,165 @@
+[
+    {
+        "id": 1,
+        "title": "Mini Blog",
+        "techs": [
+            {
+                "title": "ReactJs",
+                "url": "https://react.dev/learn"
+            },
+            {
+                "title": "Firebase",
+                "url": "https://firebase.google.com/docs?hl=pt-br"
+            }
+        ],
+        "paragraphs": [
+            "Este projeto é um miniblog desenvolvido puramente com ReactJS e suas tecnologias, utilizando o Firebase para o back-end.",
+            "Cada usuário pode se autenticar criando um perfil. Uma vez autenticado, é possível realizar postagens na página 'New Post', incluindo uma imagem, título, descrição e tags.",
+            "As postagens aparecem na homepage ordenadas por data de lançamento e podem ser pesquisadas por suas tags."
+        ],
+        "footerLinks": [
+            {
+                "title": "Acessar Mini Blog",
+                "url": "https://mini-blog-git-main-kaid3vs-projects.vercel.app/"
+            },
+            {
+                "title": "Acessar Repositório Open Source",
+                "url": "https://github.com/KaiD3v/MiniBlog"
+            }
+        ],
+        "images": [
+            {
+                "url": "/assets/miniblog-login.png",
+                "description": "Tela de cadastro da aplicação, onde é possível criar um perfil para começar a postar."
+            },
+            {
+                "url": "/assets/miniblog-img.png",
+                "description": "Home Page da aplicação, onde todas as postagens aparecem e pode-se pesquisar cada uma por suas respectivas tags."
+            },
+            {
+                "url": "/assets/miniblog-post.png",
+                "description": "Página de postagens, onde o usuário autenticado pode escrever e realizar suas postagens."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "My Repos",
+        "techs": [
+            {
+                "title": "ReactJs",
+                "url": "https://react.dev/learn"
+            },
+            {
+                "title": "GitHub API",
+                "url": "https://docs.github.com/en/rest"
+            }
+        ],
+        "paragraphs": [
+            "Este projeto é um site que se conecta à API do GitHub e foi desenvolvido puramente com ReactJS. Ele permite aos usuários salvar repositórios de interesse de forma prática.",
+            "Os usuários podem buscar por repositórios no GitHub, visualizá-los e salvá-los para referência futura. O projeto foca na simplicidade e na integração direta com o GitHub."
+        ],
+        "footerLinks": [
+            {
+                "title": "Acessar Repositório Open Source",
+                "url": "https://github.com/KaiD3v/My-Repos"
+            }
+        ],
+        "images": [
+            {
+                "url": "/assets/MyRepos.png",
+                "description": "Página inicial da aplicação web."
+            },
+            {
+                "url": "/assets/MyReposRepo.png",
+                "description": "Página de detalhes do repositório."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "ReactGram",
+        "techs": [
+            {
+                "title": "ReactJs",
+                "url": "https://react.dev/learn"
+            },
+            {
+                "title": "Express",
+                "url": "https://expressjs.com/en/starter/installing.html"
+            }
+        ],
+        "paragraphs": [
+            "Este projeto é um clone do Instagram desenvolvido com ReactJS para o front-end e Express para o back-end.",
+            "Na aplicação, cada usuário pode criar um perfil, editar o perfil com foto, bio e outras informações, e também realizar postagens de suas próprias fotos.",
+            "As postagens aparecem na homepage ordenadas por data de lançamento e podem ser pesquisadas por seus títulos.",
+            "Cada imagem postada pode ser curtida e descurtida pelos usuários. Ao acessar o perfil de um usuário, é possível ver todas as informações fornecidas, bem como todas as fotos postadas por aquele usuário."
+        ],
+        "footerLinks": [
+            {
+                "title": "Acessar Repositório Open Source",
+                "url": "https://github.com/KaiD3v/ReactGram"
+            }
+        ],
+        "images": [
+            {
+                "url": "/assets/reactgram-profile.png",
+                "description": "Página de perfil do usuário, onde pode editar suas informações, alterar foto de perfil e visualizar fotos já postadas."
+            },
+            {
+                "url": "/assets/reactgram-post.png",
+                "description": "Página de postagens, onde o usuário autenticado pode realizar as postagens de suas fotos."
+            },
+            {
+                "url": "/assets/reactgram-home.png",
+                "description": "Home Page da aplicação, onde todas as postagens aparecem e podem ser pesquisadas por seus respectivos títulos."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Tasks+",
+        "techs": [
+            {
+                "title": "NextJs",
+                "url": "https://nextjs.org/docs"
+            },
+            {
+                "title": "Firebase",
+                "url": "https://firebase.google.com/"
+            },
+            {
+                "title": "Google Auth",
+                "url": "https://developers.google.com/identity"
+            }
+        ],
+        "paragraphs": [
+            "O Tasks+ é um projeto que permite aos usuários criar e gerenciar tarefas em um painel pessoal após fazer login com sua conta do Google. As tarefas podem ser comentadas por outros usuários e compartilhadas caso sejam definidas como públicas.",
+            "A plataforma foi desenvolvida com foco em facilitar a organização pessoal e a colaboração em tarefas entre diferentes usuários."
+        ],
+        "footerLinks": [
+            {
+                "title": "Acessar Repositório Open Source",
+                "url": "https://github.com/KaiD3v/tasks-plus"
+            },
+            {
+                "title": "Acessar Tasks+",
+                "url": "https://tasks-plus-silk.vercel.app/"
+            }
+        ],
+        "images": [
+            {
+                "url": "/assets/TasksPlus.png",
+                "description": "Página inicial da aplicação."
+            },
+            {
+                "url": "/assets/TasksPlusDashboard.png",
+                "description": "Página de painel de tarefas."
+            },
+            {
+                "url": "/assets/TasksPlusPage.png",
+                "description": "Página de detalhes e comentários da tarefa."
+            }
+        ]
+    }
+]
