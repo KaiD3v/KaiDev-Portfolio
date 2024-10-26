@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "title": "Thrift Store Manager",
+        "techs": [
+            {
+                "title": "ReactJs",
+                "url": "https://react.dev/learn"
+            },
+            {
+                "title": "Express",
+                "url": "https://expressjs.com/en/starter/installing.html"
+            },
+            {
+                "title": "Tailwind CSS",
+                "url": "https://tailwindui.com/documentation"
+            }
+        ],
+        "paragraphs": [
+            "Esta é uma aplicação web fullstack para gerenciar pequenas lojas de segunda mão, chamada 'Thrift Store Manager'.",
+            "A aplicação é 100% responsiva e possui várias funcionalidades para facilitar a gestão da loja.",
+            "Na página home, você encontra toda a documentação de como utilizar o sistema, proporcionando uma introdução completa para novos usuários.",
+            "Na página Dashboard, você pode visualizar gráficos de vendas, tabelas com as vendas realizadas e tabelas com devedores.",
+            "Na página de Produtos, é possível gerenciar todo o estoque, incluindo cadastrar novos produtos com suas devidas informações, editar produtos existentes e deletar produtos quando necessário.",
+            "A aplicação também possui um formulário de compras onde você pode registrar as compras feitas para a loja. Nessa tela, há tabelas com produtos fora de estoque, tabelas com todos os produtos e tabelas de compras.",
+            "Além disso, há um componente de carrinho de compras onde são adicionados os itens que serão vendidos. Após a venda, os itens são mandados para a tabela de vendas.",
+            "Também há uma tela de tarefas, onde você pode monitorar todas as tarefas disponíveis para serem realizadas, garantindo que nada importante seja esquecido."
+        ],
+        "footerLinks": {
+            "title": "",
+            "url": ""
+        },
+        "images": [
+            {
+                "url": "/assets/makesale.gif",
+                "description": "Componente de carrinho de compras, onde são adicionados os itens que serão vendidos."
+            },
+            {
+                "url": "/assets/productspage.png",
+                "description": "Página de produtos, onde você pode gerenciar todo o estoque, cadastrando, editando e deletando produtos."
+            },
+            {
+                "url": "/assets/ThriftStoreManagerHome.png",
+                "description": "Home page, onde há uma breve apresentação e documentação do sistema."
+            },
+            {
+                "url": "/assets/dashboard.gif",
+                "description": "Página de Dashboard, onde você pode visualizar gráficos de vendas e tabelas de desempenho."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Ijatu Mystery",
+        "techs": [
+            {
+                "title": "ReactJs",
+                "url": "https://react.dev/learn"
+            },
+            {
+                "title": "TypeScript",
+                "url": "https://www.typescriptlang.org/docs/"
+            },
+            {
+                "title": "Tailwind CSS",
+                "url": "https://tailwindui.com/documentation"
+            }
+        ],
+        "paragraphs": [
+            "Este site é uma documentação para um RPG de mesa de mistério chamado 'O Mistério de Ijatu'.",
+            "A aplicação possui páginas detalhadas sobre as regras do jogo, locais importantes, histórias envolventes, personagens únicos e itens especiais.",
+            "Os jogadores podem navegar pelas páginas para aprender sobre as mecânicas do jogo, conhecer os diferentes locais do mundo de Ijatu, conhecer os personagens que encontrarão e descobrir os itens que podem usar durante suas aventuras.",
+            "Cada seção é organizada para facilitar a compreensão e proporcionar uma experiência imersiva para todos os jogadores."
+        ],
+        "footerLinks": [
+            {
+                "title": "Acessar Site",
+                "url": "https://the-ijatu-mystery-rpg.vercel.app/"
+            }
+        ],
+        "images": [
+            {
+                "url": "/assets/IjatuMysteryCharacters.png",
+                "description": "Página de personagens, onde os jogadores podem conhecer e entender melhor cada personagem do jogo."
+            },
+            {
+                "url": "/assets/IjatuMysteryItens.png",
+                "description": "Página de itens, onde os jogadores podem ver todos os itens disponíveis no jogo e suas descrições."
+            },
+            {
+                "url": "/assets/IjatuMysteryHome.png",
+                "description": "Home page, onde há uma breve apresentação do jogo."
+            },
+            {
+                "url": "/assets/IjatuMysteryRules.png",
+                "description": "Página de regras, onde estão documentadas todas as regras do jogo."
+            }
+        ]
+    }
+]

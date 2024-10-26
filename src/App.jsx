@@ -10,11 +10,10 @@ import Footer from "./components/Footer";
 // pages
 import Home from "./pages/Home";
 import MiniBlog from "./pages/projects/MiniBlog/MiniBlog";
-import IjatuMystery from "./pages/works/IjatuMystery/IjatuMystery";
-import ThriftStoreManager from "./pages/works/ThriftStoreManager/ThriftStoreManager";
 import ReactGram from "./pages/projects/ReactGram/ReactGram";
 import MyRepos from "./pages/projects/MyRepos/MyRepos";
 import TasksPlus from "./pages/projects/TasksPlus/TasksPlus";
+import WorksPageLayout from "./pages/WorksPageLayout";
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -35,17 +34,9 @@ function App() {
             <Route path="/" element={<Home />} />
 
             {/* Projects Routes */}
-            <Route path="/projects/mini-blog" element={<MiniBlog />} />
-            <Route path="/projects/reactgram" element={<ReactGram />} />
-            <Route path="/projects/my-repos" element={<MyRepos />} />
-            <Route path="/projects/tasks-plus" element={<TasksPlus />} />
-
+            
             {/* Works Routes */}
-            <Route path="/works/ijatu-mystery-rpg" element={<IjatuMystery />} />
-            <Route
-              path="/works/thrift-store-manager"
-              element={<ThriftStoreManager />}
-            />
+            <Route path="/works/:id" element={<WorksPageLayout />} />
           </Routes>
         </Router>
       </div>
