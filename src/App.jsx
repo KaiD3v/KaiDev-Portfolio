@@ -27,13 +27,8 @@ function App() {
       <div className="container">
         <Router>
           <Routes>
-            {/* Home Page */}
             <Route path="/" element={<Home />} />
-
-            {/* Projects Routes */}
             <Route path="/projects/:id" element={<ProjectsPageLayout />} />
-
-            {/* Works Routes */}
             <Route path="/works/:id" element={<WorksPageLayout />} />
           </Routes>
         </Router>
