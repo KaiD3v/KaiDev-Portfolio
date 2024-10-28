@@ -110,7 +110,7 @@
   margin: 0 auto;
   width: 100%;
   height: 100vh;
-  background: url("./assets//img/dark-background-gif3.gif");
+  background-image: url("/assets/dark-background-gif3.gif");
   color: #fff;
   padding: 2rem;
   text-align: center;
@@ -187,7 +187,7 @@
 }
 
 .portfolio-container {
-  background: url("./assets//img/dark-background-gif3.gif");
+  background-image: url("/assets/dark-background-gif3.gif");
   font-weight: lighter;
   text-align: center;
   font-size: large;
@@ -339,6 +339,13 @@
 
 .tech-icons p {
   font-weight: bold;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 135px;
+  height: 100%;
 }
 
 .contact-container header {
