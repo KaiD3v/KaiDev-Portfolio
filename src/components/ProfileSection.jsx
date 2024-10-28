@@ -1,12 +1,21 @@
-import '../App.css'
+import "../App.css";
+import { motion as m } from "framer-motion";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const ProfileSection = () => {
   return (
-    <section id="profile" className="profile-container">
-      <div>
+    <m id="profile" className="profile-container">
+      <m.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+      >
         <section className="profile-picture">
           <img
             src="https://avatars.githubusercontent.com/u/126838751?v=4"
@@ -34,8 +43,8 @@ const ProfileSection = () => {
             </li>
           </ul>
         </section>
-      </div>
-    </section>
+      </m.div>
+    </m>
   );
 };
 
