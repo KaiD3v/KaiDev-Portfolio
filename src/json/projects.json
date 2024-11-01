@@ -161,5 +161,59 @@
                 "description": "Página de detalhes e comentários da tarefa."
             }
         ]
+    },
+    {
+        "id": 5,
+        "title": "TimerDev",
+        "techs": [
+            {
+                "title": "NextJs",
+                "url": "https://nextjs.org/docs"
+            },
+            {
+                "title": "Tailwind CSS",
+                "url": "https://tailwindcss.com/"
+            },
+            {
+                "title": "TypeScript",
+                "url": "https://www.typescriptlang.org/docs"
+            }
+        ],
+        "paragraphs": [
+            "O TimerDev é uma aplicação projetada para ajudar os usuários a gerenciar seu tempo de estudo através de uma interface intuitiva e gamificada. Os usuários podem definir intervalos de estudo, pausas e acompanhar seu progresso ao longo do tempo.",
+            "A plataforma foi desenvolvida com o objetivo de aumentar a produtividade e tornar o processo de estudo mais envolvente e eficiente."
+        ],
+        "footerLinks": [
+            {
+                "title": "Acessar Repositório Open Source",
+                "url": "https://github.com/KaiD3v/timerdev"
+            },
+            {
+                "title": "Acessar TimerDev",
+                "url": "https://timer-dev.vercel.app/"
+            }
+        ],
+        "images": [
+            {
+                "url": "/assets/TimerDevHome.png",
+                "description": "Página inicial da aplicação."
+            },
+            {
+                "url": "/assets/TimerDevDashboard.png",
+                "description": "Página de gerenciamento de tempo."
+            },
+            {
+                "url": "/assets/TimerDevTimer.png",
+                "description": "Interface do timer."
+            },
+            {
+                "url": "/assets/TimerDevProfile.png",
+                "description": "Página de perfil."
+            },
+            {
+                "url": "/assets/TimerDevProfileDark.png",
+                "description": "Página de perfil em tema dark."
+            }
+        ]
     }
 ]

@@ -10,6 +10,7 @@ import miniblogImg from "/assets/miniblog-img.png";
 import reactgramImg from "/assets/reactgram-img.png";
 import myRepos from "/assets/MyRepos.png";
 import tasksPlus from "/assets/TasksPlus.png";
+import timerDevImg from "/assets/TimerDevHome.png";
 
 // hooks
 import { useState } from "react";
@@ -40,6 +41,18 @@ const worksCardsContents = [
 ];
 
 const projectsCardsContents = [
+  {
+    id: 5,
+    projectLink: "/projects/5",
+    projectName: "TimerDev",
+    projectImg: timerDevImg,
+    projectDesc: "Um aplicação de gamificação de projetos através de tempo.",
+    projectTechIcons: [
+      <RiNextjsFill />,
+      <RiTailwindCssFill />,
+      <SiTypescript />,
+    ],
+  },
   {
     id: 1,
     projectLink: "/projects/4",
